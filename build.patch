@@ -1,5 +1,5 @@
 diff --git a/src/net/strategies/DonateStrategy.cpp b/src/net/strategies/DonateStrategy.cpp
-index 2be0af0..7e0a19b 100644
+index f8a391d9..3f36834b 100644
 --- a/src/net/strategies/DonateStrategy.cpp
 +++ b/src/net/strategies/DonateStrategy.cpp
 @@ -49,11 +49,14 @@ namespace xmrig {
@@ -19,15 +19,15 @@ index 2be0af0..7e0a19b 100644
  } /* namespace xmrig */
  
  
-@@ -70,9 +73,9 @@ xmrig::DonateStrategy::DonateStrategy(Controller *controller, IStrategyListener
-     Buffer::toHex(hash, 32, m_userId);
+@@ -76,9 +79,9 @@ xmrig::DonateStrategy::DonateStrategy(Controller *controller, IStrategyListener
+ #   endif
  
  #   ifdef XMRIG_FEATURE_TLS
--    m_pools.emplace_back(kDonateHostTls, 443, m_userId, nullptr, 0, true, true);
-+    m_pools.emplace_back(kDonateHostTls, 443, userName, nullptr, 0, true, true);
+-    m_pools.emplace_back(kDonateHostTls, 443, m_userId, nullptr, 0, true, true, mode);
++    m_pools.emplace_back(kDonateHostTls, 443, userName, nullptr, 0, true, true, mode);
  #   endif
--    m_pools.emplace_back(kDonateHost, 3333, m_userId, nullptr, 0, true);
-+    m_pools.emplace_back(kDonateHost, 3333, userName, nullptr, 0, true);
+-    m_pools.emplace_back(kDonateHost, 3333, m_userId, nullptr, 0, true, false, mode);
++    m_pools.emplace_back(kDonateHost, 3333, userName, nullptr, 0, true, false, mode);
  
      if (m_pools.size() > 1) {
          m_strategy = new FailoverStrategy(m_pools, 10, 2, this, true);
