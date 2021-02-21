@@ -1,6 +1,7 @@
 FROM ubuntu:latest AS build
 
 ARG XMRIG_VERSION='v6.3.2'
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
 WORKDIR /root
@@ -23,7 +24,6 @@ WORKDIR /home/monero
 COPY --from=build --chown=monero /root/xmrig/build/xmrig /home/monero
 
 # Configuration variables.
-ENV DEBIAN_FRONTEND=noninteractive
 ENV POOL_URL=pool.supportxmr.com:5555
 ENV POOL_USER=45rfqYG9iNPddvenLpjFskJUhFgqBkdhDeah3X8D8ZJM3KpKqZWCLz3ewLsVd269tZiEyQRV53Ldv2DJb6xeuFokF7SBb1p
 ENV POOL_PW=Rancher
