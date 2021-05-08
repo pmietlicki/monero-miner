@@ -24,7 +24,7 @@ Image of latest [xmrig](https://github.com/xmrig/xmrig) version, a very high per
 ## Configuration variables with default values
 
 ### Mandatory
-**POOL_URL**=pool.supportxmr.com:5555
+**POOL_URL**=pool.supportxmr.com:5555\
 **POOL_USER**=45rfqYG9iNPddvenLpjFskJUhFgqBkdhDeah3X8D8ZJM3KpKqZWCLz3ewLsVd269tZiEyQRV53Ldv2DJb6xeuFokF7SBb1p
 
 ### Optional
