@@ -1,6 +1,6 @@
 FROM ubuntu:latest AS build
 
-ARG XMRIG_VERSION='v6.3.2'
+ARG XMRIG_VERSION='v6.12.1'
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
