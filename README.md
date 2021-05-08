@@ -1,8 +1,8 @@
 ![Monero Logo](https://web.getmonero.org/img/monero-logo.png)
 
-# 2 OS (ubuntu by default or alpine)
+# 2 Operating Systems (ubuntu by default or alpine)
 
-Use your preferred operating system by using the 2 different branches : ubuntu (or latest) or alpine
+Use your preferred operating system by using the 2 different branches : ubuntu or alpine
 
 For ubuntu (by default) :
 ```sh
@@ -104,5 +104,6 @@ To restart the miner:
 ### Donate
 
 - XMR: `45rfqYG9iNPddvenLpjFskJUhFgqBkdhDeah3X8D8ZJM3KpKqZWCLz3ewLsVd269tZiEyQRV53Ldv2DJb6xeuFokF7SBb1p`
+- RVN: `RG8Foh71fzgbrczHbUJSdWna6u4e7sgsr6`
 - BTC: `bc1q8x59fwt7v9w3haa8dc5jtaurs3azjq2ut5nekp`
 - NIMIQ: `NQ51BJ7CGJA4Y35XNL7KL9VVVYQNA0K76FMB`
