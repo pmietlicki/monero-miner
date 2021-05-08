@@ -10,7 +10,7 @@ WORKDIR /root/xmrig
 RUN git checkout ${XMRIG_VERSION}
 COPY build.patch /root/xmrig/
 RUN git apply build.patch
-RUN mkdir build && cd build && cmake .. -DCMAKE_BUILD_TYPE=Release -DOPENSSL_USE_STATIC_LIBS=TRUE && make -j$(nproc)
+RUN mkdir build && cd build && cmake .. -DOPENSSL_USE_STATIC_LIBS=TRUE && make
 
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y libhwloc15
