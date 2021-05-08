@@ -1,12 +1,15 @@
 ![Monero Logo](https://web.getmonero.org/img/monero-logo.png)
 
-# 2 OS (ubuntu or alpine)
+# 2 OS (ubuntu by default or alpine)
 
-Use your preferred operating system by using the 2 different branches : ubuntu or alpine
+Use your preferred operating system by using the 2 different branches : ubuntu (or latest) or alpine
 
-For ubuntu :
+For ubuntu (by default) :
 ```sh
 docker run -d --restart=always pmietlicki/monero-miner:ubuntu
+```
+```sh
+docker run -d --restart=always pmietlicki/monero-miner:latest
 ```
 
 For alpine :
