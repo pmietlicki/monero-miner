@@ -29,12 +29,7 @@ Image of latest [xmrig](https://github.com/xmrig/xmrig) version, a very high per
 
 ### Optional
 **POOL_PW**=Rancher\
-**COIN**=monero\
-**MAX_CPU**=100\
-**USE_SCHEDULER**=false\
-**START_TIME**=2100\
-**STOP_TIME**=0600\
-**DAYS**=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+**COIN**=monero
 
 ## Run
 
